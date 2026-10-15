@@ -1,0 +1,48 @@
+{
+    "name": "omnilab/donki",
+    "type": "library",
+    "description": "Omnilab DONKI: NASA's space weather events from the CCMC's Database Of Notifications, Knowledge, Information - solar flares (GOES class, begin, peak, end, source, active region), coronal mass ejections (speed, half angle, direction, type), geomagnetic storms (Kp), interplanetary shocks, solar energetic particle events, magnetopause crossings, radiation belt enhancements, high speed streams - by activity id, or every event of a period, with the events each is linked to; no key needed.",
+    "keywords": [
+        "science",
+        "astronomy",
+        "space-weather",
+        "donki",
+        "nasa",
+        "ccmc",
+        "solar-flares",
+        "cme",
+        "geomagnetic-storms",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Donki\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Donki\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
