@@ -1,7 +1,7 @@
 # omnilab/donki
 
 NASA's DONKI - the Database Of Notifications, Knowledge, Information of the Community
-Coordinated Modeling Center (NASA Goddard) - for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab):
+Coordinated Modeling Center (NASA Goddard) - for [omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab):
 space weather events - solar flares (GOES class, begin, peak and end, source, active region),
 coronal mass ejections (speed, half angle, direction and type of the most accurate analysis),
 geomagnetic storms (the highest Kp), interplanetary shocks, solar energetic particle events,
