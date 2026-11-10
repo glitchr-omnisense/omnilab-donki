@@ -1,0 +1,169 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to function is_array\(\) with array\<string, mixed\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: DonkiSource.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 2
+			path: DonkiSource.php
+
+		-
+			message: '#^Method Omnilab\\Donki\\DonkiSource\:\:list\(\) should return list\<array\<string, mixed\>\> but returns list\<array\<mixed, mixed\>\>\.$#'
+			identifier: return.type
+			count: 1
+			path: DonkiSource.php
+
+		-
+			message: '#^Parameter \#1 \$text of static method Omnilab\\Source\\HttpSource\:\:text\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 8
+			path: DonkiSource.php
+
+		-
+			message: '#^Parameter \#1 \$time of static method Omnilab\\Source\\HttpSource\:\:time\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: DonkiSource.php
+
+		-
+			message: '#^Parameter \#2 \$from of method Omnilab\\Donki\\DonkiSource\:\:list\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: DonkiSource.php
+
+		-
+			message: '#^Parameter \#3 \$to of method Omnilab\\Donki\\DonkiSource\:\:list\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: DonkiSource.php
+
+		-
+			message: '#^Parameter \#3 \$value of class Omnilab\\Model\\Property constructor expects bool\|float\|int\|Omnilab\\Model\\Quantity\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: DonkiSource.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 1
+			path: DonkiSourceFactory.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: DonkiSourceFactory.php
+
+		-
+			message: '#^Cannot access property \$description on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$domain on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$id on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$kind on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$label on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$place on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$scheme on mixed\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$source on Omnilab\\Model\\Property\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$time on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot access property \$url on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot call method format\(\) on DateTimeImmutable\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot call method property\(\) on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot call method related\(\) on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Cannot call method value\(\) on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: method.nonObject
+			count: 9
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Parameter \#1 \$haystack of function str_starts_with expects string, array\<mixed\>\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of static method PHPUnit\\Framework\\Assert\:\:assertStringContainsString\(\) expects string, bool\|float\|int\|Omnilab\\Model\\Quantity\|string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Parameter \#2 \$string of static method PHPUnit\\Framework\\Assert\:\:assertStringStartsWith\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Tests/DonkiSourceTest.php
+
+		-
+			message: '#^Property Omnilab\\Donki\\Tests\\DonkiSourceTest\:\:\$calls \(list\<array\{string, string, string\}\>\) does not accept non\-empty\-list\<array\{string, array\<mixed\>\|string, array\<mixed\>\|string\}\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: Tests/DonkiSourceTest.php

@@ -48,6 +48,17 @@ its records are NASA's and its partners' (the M2M Space Weather Analysis Office,
 the Kp). The CCMC publishes a publications policy on ccmc.gsfc.nasa.gov asking that work using its
 services acknowledge the CCMC; credit DONKI and the CCMC as the source. No rate is published.
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://ccmc.gsfc.nasa.gov/tools/DONKI/ on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: not stated; commercial use: unknown.
+- Credit: not required: We acknowledge the Community Coordinated Modeling Center (CCMC) at Goddard Space Flight Center for the use of DONKI, https://ccmc.gsfc.nasa.gov/tools/DONKI/ (https://ccmc.gsfc.nasa.gov/tools/DONKI/).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

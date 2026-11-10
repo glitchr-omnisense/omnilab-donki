@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "donki",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "unknown",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": "We acknowledge the Community Coordinated Modeling Center (CCMC) at Goddard Space Flight Center for the use of DONKI, https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+            "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://ccmc.gsfc.nasa.gov/publication-policy/",
+        "policy": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "tyler.j.schiewe@nasa.gov",
+        "notes": "This source calls the CCMC directly (ccmc.gsfc.nasa.gov/DONKI-API/get/, no key), not api.nasa.gov: the api.nasa.gov figures (authentication page, read 2026-11-10: DEMO_KEY 30 requests an hour and 50 a day per IP address; own key 1,000 an hour per key across all api.nasa.gov APIs) do not apply to it; a DEMO_KEY call to api.nasa.gov/DONKI that day answered X-RateLimit-Limit: 10. The CCMC pages read (DONKI tool page, DONKI API page, data policy, publication policy) publish no rate; a call to the CCMC endpoint answered X-Rate-Limit-Remaining: 119 (an unpublished window). Rules of the Road: event and validation studies with DONKI data to be done with the CCMC's knowledge and collaboration; real-time data is prototyping quality; acknowledge the CCMC in publications (publication policy, a request for publications). No licence stated. Contact: the DONKI curator."
+    }
+}
