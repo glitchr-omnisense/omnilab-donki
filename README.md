@@ -41,6 +41,34 @@ answered 301 to the CCMC's announcement that since 30 September 2026 the API is 
 
 See [docs/](docs/index.md) for what is read, how it maps, and what DONKI does not give here.
 
+## Install and a first call
+
+```sh
+composer require omnilab/donki
+```
+
+A real call, with no account and no key: the geomagnetic storm of 10 May 2024 in NASA's DONKI.
+`mailto` is your address, sent in the User-Agent so that the service can reach you before it blocks
+a caller; the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Donki\DonkiSourceFactory;
+
+$donki = (new DonkiSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$storm = $donki->entity('2024-05-10T15:00:00-GST-001');
+echo $storm->label, ', Kp max ', $storm->value('kp_max'), "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+Geomagnetic storm, Kp 9, 2024-05-10 15:00 UTC, Kp max 9
+```
+
 ## Terms of use
 
 DONKI is a service of NASA's Community Coordinated Modeling Center (Goddard Space Flight Center);
